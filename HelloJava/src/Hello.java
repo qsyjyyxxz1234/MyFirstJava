@@ -107,6 +107,12 @@ public class Hello {
         for(int t=5;t<96;t=t+10) {
             System.out.println(t);
         }
+        for(int u=1;u<9;u++) {
+            for(int p=1;p<9;p++) {
+                System.out.print(u+"*"+p+"="+u*p+" ");
+            }
+            System.out.println();
+        }
     }
  
 
