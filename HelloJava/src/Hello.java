@@ -98,7 +98,15 @@ public class Hello {
         for(int q=10;q>0;q=q-2) {
             System.out.println(q);
         }
-        //九九乘法表(練習)!!
+        for(int e=1;e<10;e++) {                                                 //九九乘法表
+            for(int r=1;r<10;r++) {
+                System.out.print(e+"*"+r+" ");
+            }
+            System.out.println(" ");
+        }
+        for(int t=5;t<96;t=t+10) {
+            System.out.println(t);
+        }
     }
  
 
