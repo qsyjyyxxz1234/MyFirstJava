@@ -80,7 +80,25 @@ public class Hello {
             default:
                 System.out.println("error~");                                
             }
+        double F, C=50;
+        F = C*9/5 + 32;
+        System.out.println("F ="+F); 
         
+        //java.util.Scanner sc = new java.util.Scanner(System.in);
+        //System.out.print("請輸入:");
+        //int userChoice = sc.nextInt();
+        //System.out.println(userChoice);
+        
+        for(int s=1;s<10;s=s+2) {
+            System.out.println(s);    
+        }
+        for(int o=2;o<12;o=o+2) {
+            System.out.println(o);
+        }
+        for(int q=10;q>0;q=q-2) {
+            System.out.println(q);
+        }
+        //九九乘法表(練習)!!
     }
  
 
