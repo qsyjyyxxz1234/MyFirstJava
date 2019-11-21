@@ -66,7 +66,7 @@ public class Hello {
                 System.out.println("a>b");
             }
         }
-        char grade ='A';
+        char grade = 'A';
         switch (grade) {
             case 'A':
                 System.out.println("excellent!");
@@ -78,42 +78,61 @@ public class Hello {
                 System.out.println("so so");
                 break;
             default:
-                System.out.println("error~");                                
-            }
-        double F, C=50;
-        F = C*9/5 + 32;
-        System.out.println("F ="+F); 
-        
+                System.out.println("error~");
+        }
+        double F, C = 50;
+        F = C * 9 / 5 + 32;
+        System.out.println("F =" + F);
+
         //java.util.Scanner sc = new java.util.Scanner(System.in);
         //System.out.print("請輸入:");
         //int userChoice = sc.nextInt();
         //System.out.println(userChoice);
-        
-        for(int s=1;s<10;s=s+2) {
-            System.out.println(s);    
+        for (int s = 1; s < 10; s = s + 2) {
+            System.out.println(s);
         }
-        for(int o=2;o<12;o=o+2) {
+        for (int o = 2; o < 12; o = o + 2) {
             System.out.println(o);
         }
-        for(int q=10;q>0;q=q-2) {
+        for (int q = 10; q > 0; q = q - 2) {
             System.out.println(q);
         }
-        for(int e=1;e<10;e++) {                                                 //九九乘法表
-            for(int r=1;r<10;r++) {
-                System.out.print(e+"*"+r+" ");
+        for (int e = 1; e < 10; e++) {                                                 //九九乘法表
+            for (int r = 1; r <= e; r++) {                                             //(if r<=e) 
+                System.out.print(e + "*" + r + "=" + e * r + " ");
             }
             System.out.println(" ");
         }
-        for(int t=5;t<96;t=t+10) {
+        for (int t = 5; t < 96; t = t + 10) {
             System.out.println(t);
         }
-        for(int u=1;u<9;u++) {
-            for(int p=1;p<9;p++) {
-                System.out.print(u+"*"+p+"="+u*p+" ");
+        for (int u = 1; u < 10; u++) {
+            for (int p = 1; p < 10; p++) {
+                System.out.print(u + "*" + p + "=" + u * p + " ");
             }
             System.out.println();
         }
+        for (int l = 1; l < 11; l++) {
+            System.out.println(10 * l - 5 + " ");
+        }
+        //while(b<11) {
+        //System.out.println("b="+b);
+        //b++;
+        //if(b==6) {
+            //break;                                                              //中斷執行
+                                                                                //continue 略過
+        //java.util.Scanner sc = new java.util.Scanner(System.in);
+        //System.out.println("請輸入: ");
+        //int input = sc.nextInt();
+        //System.out.println("input="+input);
+        
+        //for(int g=1;1<=input;g++) {
+            //System.out.println(g);
+        //}
     }
- 
-
 }
+
+            
+
+    
+
