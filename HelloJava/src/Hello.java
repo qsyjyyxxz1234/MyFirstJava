@@ -97,9 +97,16 @@ public class Hello {
         for (int q = 10; q > 0; q = q - 2) {
             System.out.println(q);
         }
+        System.out.println("----test----");
         for (int e = 1; e < 10; e++) {                                                 //九九乘法表
             for (int r = 1; r <= e; r++) {                                             //(if r<=e) 
-                System.out.print(e + "*" + r + "=" + e * r + " ");
+                System.out.printf("%d", e);
+                System.out.print("*");
+                System.out.printf("%d", r);
+                System.out.print("=");
+                System.out.printf("%2d", e * r);
+                System.out.print("  ");
+//                System.out.print(e + "*" + r + "=" + e * r + " ");
             }
             System.out.println(" ");
         }
@@ -115,24 +122,22 @@ public class Hello {
         for (int l = 1; l < 11; l++) {
             System.out.println(10 * l - 5 + " ");
         }
-        //while(b<11) {
-        //System.out.println("b="+b);
-        //b++;
-        //if(b==6) {
-            //break;                                                              //中斷執行
-                                                                                //continue 略過
-        //java.util.Scanner sc = new java.util.Scanner(System.in);
-        //System.out.println("請輸入: ");
-        //int input = sc.nextInt();
-        //System.out.println("input="+input);
-        
-        //for(int g=1;1<=input;g++) {
-            //System.out.println(g);
-        //}
+        while (b < 11) {
+            System.out.println("b=" + b);
+            b++;
+            if (b == 6) {                                                      //中斷執行
+                //continue 略過
+                java.util.Scanner sc = new java.util.Scanner(System.in);
+                System.out.println("請輸入: ");
+                int input = sc.nextInt();
+                System.out.println("input=" + input);
+
+                for (int g = 1; 1 <= input; g++) {
+                    //System.out.println(g);
+                }
+                break;
+                
+            }
+        }
     }
 }
-
-            
-
-    
-
