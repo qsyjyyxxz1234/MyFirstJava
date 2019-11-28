@@ -29,10 +29,10 @@ public class test1 {
         //data[3] = ((int) (Math.random() * 100)) % 42 + 1;
         //data[4] = ((int) (Math.random() * 100)) % 42 + 1;
         //data[5] = ((int) (Math.random() * 100)) % 42 + 1;
-        int[][] xyz=new int[2][];
-        xyz[0]=new int[9];
-        xyz[0][8]=1;
-        System.out.println("[0][8]="+xyz[0][8]);
+        int[][] xyz = new int[2][];
+        xyz[0] = new int[9];
+        xyz[0][8] = 1;
+        System.out.println("[0][8]=" + xyz[0][8]);
         int[][] nine = new int[9][9];//二維陣列
         for (int e = 0; e < 9; e++) {
             for (int r = 0; r < 9; r++) {
@@ -42,5 +42,19 @@ public class test1 {
             System.out.println(" ");
 
         }
+        String s = "hello";
+        System.out.println("String s =" + s);
+
+        String src = new String("hi");
+        System.out.println("String src =" + src);
+
+        String river = "Mississippi";
+        System.out.println("String river =" + river.length());//length()
+        System.out.println("String river =" + river.charAt(3));//charAT()
+        System.out.println("String river =" + river.indexOf("M"));//indexOF()
+        System.out.println("String river =" + river.replace("M", "m"));//replace
+        System.out.println("String river ="+ river.toLowerCase());//toLowerCase
+        System.out.println("String river ="+river.toUpperCase());//toUpperCase
+        System.out.println("String river ="+river.substring(10));//substring *
     }
 }
