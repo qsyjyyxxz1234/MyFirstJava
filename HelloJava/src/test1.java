@@ -29,7 +29,11 @@ public class test1 {
         //data[3] = ((int) (Math.random() * 100)) % 42 + 1;
         //data[4] = ((int) (Math.random() * 100)) % 42 + 1;
         //data[5] = ((int) (Math.random() * 100)) % 42 + 1;
-        int[][] nine = new int[9][9];
+        int[][] xyz=new int[2][];
+        xyz[0]=new int[9];
+        xyz[0][8]=1;
+        System.out.println("[0][8]="+xyz[0][8]);
+        int[][] nine = new int[9][9];//二維陣列
         for (int e = 0; e < 9; e++) {
             for (int r = 0; r < 9; r++) {
                 nine[e][r] = (e + 1) * (r + 1);
