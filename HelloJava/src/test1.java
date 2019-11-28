@@ -18,7 +18,7 @@ public class test1 {
         hello(3, 7, '!');
         double d = Math.random();
         System.out.println("d =" + d++ * 1000 % 42 + 1);
-        int[] data = new int[6];
+        int[] data = new int[6];//陣列Array
         for (int o = 1; o < 6; o++) {                                            //.length
             data[o] = ((int) (Math.random() * 100)) % 42 + 1;
             System.out.println("data[" + o + "] =" + data[o]);
@@ -29,6 +29,14 @@ public class test1 {
         //data[3] = ((int) (Math.random() * 100)) % 42 + 1;
         //data[4] = ((int) (Math.random() * 100)) % 42 + 1;
         //data[5] = ((int) (Math.random() * 100)) % 42 + 1;
+        int[][] nine = new int[9][9];
+        for (int e = 0; e < 9; e++) {
+            for (int r = 0; r < 9; r++) {
+                nine[e][r] = (e + 1) * (r + 1);
+                System.out.print("nine [" + e + "][" + r + "]=" + (e + 1) * (r + 1) + " ");
+            }
+            System.out.println(" ");
 
+        }
     }
 }
