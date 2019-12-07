@@ -6,7 +6,7 @@ public class MyPoint {
 
     public MyPoint(int x, int y) {                                  //constructor建構子(製造/產生物件的涵式)(沒有回傳值)(名稱跟類別名稱一致)
         System.out.println("in MyPoint()");
-        this.x = x;                                                 //this(只能用在涵式裡面/關鍵字)(正在執行程式中的物件)
+        this.x = x;                                                 //this(只能用在涵式裡面/關鍵字)(正在執行程式中的物件)(該物件必須存在)
         this.y = y;
         //print();
     }
@@ -28,7 +28,7 @@ public class MyPoint {
     }
 
     public void print() {
-        System.out.println("(x,y)@(" + this.x + "," + this.y + ")");
+        System.out.println("(x,y)@(" + getX() + "," + getY() + ")");
     }
 
 }
