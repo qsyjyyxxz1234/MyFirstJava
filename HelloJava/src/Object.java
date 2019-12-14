@@ -21,8 +21,21 @@ class car {
 public class Object {
 
     public static void main(String[] args) {
-        MyPoint p0 = new MyPoint();   //若沒有預設建構子，系統會自動導入建構子>
-        p0.print();
+        Circle c1 = new Circle();
+        c1.print();
+        
+        c1.setX(5);
+        c1.setY(6);
+        c1.setR(7);
+        c1.print();
+        
+        c1.printarea();
+        
+        
+//        MyPoint p0 = new MyPoint();   //若沒有預設建構子，系統會自動導入建構子>
+//        p0.print();
+
+
         //MyPoint p1 = new MyPoint(1, 2);
 //        p1.setX(12);
 //        p1.setY(7);
@@ -53,9 +66,11 @@ public class Object {
 //        System.out.println("c2.speed = " + c2.speed);
 //        Point p2 = new Point(6, 8);
 //        System.out.println("" + p2.toString());
-//
+
+
 //        Point2D p3 = new Point(5, 6);
 //        System.out.println("" + p3.toString());
+
 
 //        JFrame jf = new JFrame("Hello JFrame");
 //        jf.setVisible(true);
